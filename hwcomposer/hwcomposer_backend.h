@@ -59,10 +59,10 @@
 class QEglFSWindow;
 
 // Evaluate "x", if it doesn't return zero, print a warning
-#define HWC_PLUGIN_EXPECT_ZERO(x) \
-    { /*int res; if ((res = (x)) != 0) \
-        qWarning("QPA-HWC: %s in %s returned-edp17-1 %i", (#x), __func__, res); */
-    }
+#define HWC_PLUGIN_EXPECT_ZERO(x)
+/*    { int res; if ((res = (x)) != 0) \
+        qWarning("QPA-HWC: %s in %s returned-edp17-1 %i", (#x), __func__, res); 
+    }*/
 
 // Evaluate "x", if it isn't NULL, print a warning
 #define HWC_PLUGIN_EXPECT_NULL(x) \
