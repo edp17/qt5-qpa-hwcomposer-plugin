@@ -61,12 +61,12 @@ class QEglFSWindow;
 // Evaluate "x", if it doesn't return zero, print a warning
 #define HWC_PLUGIN_EXPECT_ZERO(x) \
     { int res; if ((res = (x)) != 0) \
-        qWarning("QPA-HWC: %s in %s returned %i", (#x), __func__, res); }
+        qWarning("QPA-HWC: %s in %s returned-edp17-1 %i", (#x), __func__, res); }
 
 // Evaluate "x", if it isn't NULL, print a warning
 #define HWC_PLUGIN_EXPECT_NULL(x) \
     { void *res; if ((res = (x)) != NULL) \
-        qWarning("QPA-HWC: %s in %s returned %" PRIxPTR, (#x), __func__, (intptr_t)res); }
+        qWarning("QPA-HWC: %s in %s returned-edp17-2 %" PRIxPTR, (#x), __func__, (intptr_t)res); }
 
 // Evaluate "x", if it is NULL, exit with a fatal error
 #define HWC_PLUGIN_FATAL(x) \
